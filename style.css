@@ -5,6 +5,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     background: #0d0d0d;
     color: white;
+    text-align: center;
 }
 
 /* NAVBAR */
@@ -107,15 +108,62 @@ body {
 }
 
 
-/* ===== VIDEO (NOVO) ===== */
+/* ===== VIDEO ===== */
 .video-jogo {
-    width: 60%; /* tamanho menor */
+    width: 60%;
     max-width: 700px;
     min-width: 300px;
     display: block;
     margin: 30px auto;
     border: 3px solid white;
     border-radius: 12px;
+}
+
+
+/* ===== TÍTULO DO JOGO ===== */
+.titulo-jogo {
+    margin-top: 120px;
+    font-size: 28px;
+    color: red;
+    text-shadow: 0 0 10px red;
+}
+
+
+/* ===== JOGO (IFRAME) ===== */
+.game-frame {
+    width: 80%;
+    max-width: 1000px;
+    height: 600px;
+    border: 4px solid red;
+    border-radius: 12px;
+    display: block;
+    margin: 40px auto;
+    box-shadow: 0 0 25px red;
+    background: black;
+}
+
+
+/* ===== BOTÃO VOLTAR ===== */
+.btn-voltar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.btn-voltar:hover {
+    background: #ff1a1a;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px red;
 }
 
 
