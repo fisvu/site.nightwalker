@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Personagens</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+<img src="imagens/miniatura.png">
+</div>
+
+<ul class="menu">
+<li><a href="index.html">Início</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+<li><a href="personagem.html">Personagens</a></li>
+<li><a href="contato.html">Contato</a></li>
+</ul>
+
+<button class="btn-topo" onclick="window.location.href='jogo.html'">Jogar</button>
+
+</nav>
+
+<section class="secao">
+
+<h1>Personagens</h1>
+
+<div class="cards">
+
+<!-- NIGHT WALKER -->
+<div class="card-flip" onclick="this.classList.toggle('ativo')">
+<div class="card-inner">
+
+<div class="card-front">
+<img src="imagens/carta.walker.png">
+</div>
+
+<div class="card-back">
+<h3>Night Walker</h3>
+<p>
+Uma silhueta sombria que caminha onde a luz teme entrar.
+
+<br><br>
+
+Sob um manto vermelho arrastado, seu rosto permanece oculto,
+revelando apenas olhos laranja que brilham como brasas vivas.
+
+<br><br>
+
+Sua magia de fogo não nasce da lenha,
+mas da própria escuridão que ele consome.
+
+<br><br>
+
+O calor que emana de suas mãos é capaz de derreter o aço
+antes mesmo do combate começar.
+
+<br><br>
+
+Onde o Night Walker pisa, a escuridão se retira,
+não por respeito, mas por medo de ser consumida.
+</p>
+</div>
+
+</div>
+</div>
+
+<!-- HOLLOW SENTINEL -->
+<div class="card-flip" onclick="this.classList.toggle('ativo')">
+<div class="card-inner">
+
+<div class="card-front">
+<img src="imagens/hollow.png">
+</div>
+
+<div class="card-back">
+<h3>Hollow Sentinel</h3>
+<p>
+Uma carcaça de ossos áridos que se recusa a descansar.
+
+<br><br>
+
+Sem carne, sem vontade e sem medo,
+ele é o eco de um guerreiro que esqueceu o próprio nome.
+
+<br><br>
+
+Onde deveria haver um rosto,
+existe apenas o vazio de um crânio envelhecido.
+
+<br><br>
+
+Empunhando uma espada pesada e manchada pelo tempo,
+move-se com precisão mortal.
+
+<br><br>
+
+Não respira. Não hesita.
+É o carrasco silencioso que protege a escuridão.
+</p>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<script>
+let acesso = localStorage.getItem("acessoLiberado");
+if (acesso !== "sim") document.body.style.filter = "blur(20px)";
+</script>
+
+</body>
+</html>

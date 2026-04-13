@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Night Walker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="imagens/miniatura.png" alt="logo">
+    </div>
+
+    <!-- MENU -->
+    <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="personagem.html">Personagens</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+    <!-- BOTÃO -->
+    <button class="btn-topo" onclick="window.location.href='jogo.html'">
+        Jogar
+    </button>
+
+</nav>
+
+<section class="hero">
+    <h1>Night Walker</h1>
+    <button class="btn-jogar" onclick="window.location.href='jogo.html'">
+        Jogar
+    </button>
+</section>
+
+<script>
+window.onload = function() {
+
+let acesso = localStorage.getItem("acessoLiberado");
+
+if (acesso !== "sim") {
+
+    const ANO_LANCAMENTO = 2026;
+    let anoAtual = new Date().getFullYear();
+
+    if (anoAtual == ANO_LANCAMENTO) {
+        alert("NOTÍCIA: Este jogo é um GRANDE LANÇAMENTO deste ano!");
+    }
+
+    let nome = prompt("Bem-vindo! Qual seu nome?");
+    if (!nome) nome = "Jogador";
+
+    let idade = Number(prompt("Olá " + nome + "! Qual sua idade?"));
+
+    if (isNaN(idade)) {
+        alert("Digite uma idade válida!");
+        return;
+    }
+
+    if (idade >= 18) {
+        localStorage.setItem("acessoLiberado", "sim");
+        alert("Parabéns, " + nome + "! Seu acesso foi liberado com sucesso.");
+    } else {
+        alert("Lamentamos, " + nome + ". Acesso restrito.");
+        document.body.style.filter = "blur(20px)";
+    }
+}
+
+}
+</script>
+
+</body>
+</html>

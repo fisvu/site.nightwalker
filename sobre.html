@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Sobre</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="imagens/miniatura.png" alt="Logo">
+    </div>
+
+    <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="personagem.html">Personagens</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+    <button class="btn-topo" onclick="window.location.href='jogo.html'">
+        Jogar
+    </button>
+
+</nav>
+
+<section class="secao">
+
+    <h1>Sobre o Jogo</h1>
+
+    <p><strong>Criador:</strong> Ryan Christopher</p>
+    <p>Projeto TADS integrado, Campo Mourão</p>
+
+    <p>
+        Um mundo consumido pela escuridão onde a luz desapareceu.
+        Criaturas surgem das sombras e dominam tudo.
+    </p>
+
+    <p>
+        No meio do caos surge Night Walker, uma entidade única.
+    </p>
+
+    <!-- VIDEO EM LOOP -->
+    <video class="video-jogo" autoplay loop muted playsinline>
+        <source src="video/gameplay.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+    </video>
+
+</section>
+
+<script>
+let acesso = localStorage.getItem("acessoLiberado");
+if (acesso !== "sim") {
+    document.body.style.filter = "blur(20px)";
+}
+</script>
+
+</body>
+</html>

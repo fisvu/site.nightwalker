@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Contato</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+<img src="imagens/miniatura.png">
+</div>
+
+<ul class="menu">
+<li><a href="index.html">Início</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+<li><a href="personagem.html">Personagens</a></li>
+<li><a href="contato.html">Contato</a></li>
+</ul>
+
+<button class="btn-topo" onclick="window.location.href='jogo.html'">Jogar</button>
+
+</nav>
+
+<section class="secao">
+
+<h1>Contato</h1>
+
+<p>Envie um email com:</p>
+
+<p>✔ Nome</p>
+<p>✔ Idade</p>
+<p>✔ Opinião sobre o jogo</p>
+<p>✔ Sugestões</p>
+
+<p>Email: NightWalkerGame@gmail.com</p>
+
+</section>
+
+<script>
+let acesso = localStorage.getItem("acessoLiberado");
+if (acesso !== "sim") document.body.style.filter = "blur(20px)";
+</script>
+
+</body>
+</html>
