@@ -71,6 +71,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.SubVar,
 		C3.Behaviors.Bullet.Cnds.CompareTravelled,
 		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.JavaScriptInEvents.EventSheet1_Event37_Act2,
 		C3.Plugins.Button.Cnds.OnClicked,
 		C3.Plugins.Mouse.Cnds.OnClick
 	];
